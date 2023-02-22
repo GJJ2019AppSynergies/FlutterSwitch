@@ -357,7 +357,8 @@ class _FlutterSwitchState extends State<FlutterSwitch>
                         duration: widget.duration,
                         child: Container(
                           width: _textSpace,
-                          padding: EdgeInsets.symmetric(horizontal: 4.0),
+                          padding:
+                              EdgeInsets.symmetric(horizontal: widget.padding),
                           alignment: Alignment.centerLeft,
                           child: _activeText,
                         ),
@@ -369,7 +370,8 @@ class _FlutterSwitchState extends State<FlutterSwitch>
                           duration: widget.duration,
                           child: Container(
                             width: _textSpace,
-                            padding: EdgeInsets.symmetric(horizontal: 4.0),
+                            padding: EdgeInsets.symmetric(
+                                horizontal: widget.padding),
                             alignment: Alignment.centerRight,
                             child: _inactiveText,
                           ),
@@ -381,7 +383,7 @@ class _FlutterSwitchState extends State<FlutterSwitch>
                           child: Container(
                             width: widget.toggleSize,
                             height: widget.toggleSize,
-                            padding: EdgeInsets.all(4.0),
+                            padding: EdgeInsets.all(widget.padding),
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               color: _toggleColor,
